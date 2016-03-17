@@ -12,6 +12,7 @@
 
 @interface NextViewController ()
 - (IBAction)backVC:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -40,6 +41,6 @@
 - (IBAction)backVC:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    [self.delegate backAValue:@"abc"];
+    [self.delegate backAValue:self.textField.text];
 }
 @end

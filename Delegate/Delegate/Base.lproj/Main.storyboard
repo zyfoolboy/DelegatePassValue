@@ -84,14 +84,28 @@
                                     <action selector="backVC:" destination="DlP-yz-xWd" eventType="touchUpInside" id="5qz-vv-Mly"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAj-Dw-8UA">
+                                <rect key="frame" x="250" y="227" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bPF-wy-WV7"/>
+                                    <constraint firstAttribute="height" constant="30" id="ic2-Qd-D9X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sjy-v7-aui" firstAttribute="top" secondItem="DAj-Dw-8UA" secondAttribute="bottom" constant="28" id="Sgp-Mm-mwf"/>
                             <constraint firstItem="sjy-v7-aui" firstAttribute="centerY" secondItem="193-v3-H9f" secondAttribute="centerY" id="aeN-7N-07D"/>
                             <constraint firstItem="sjy-v7-aui" firstAttribute="centerX" secondItem="193-v3-H9f" secondAttribute="centerX" id="iGM-bI-M4T"/>
+                            <constraint firstItem="DAj-Dw-8UA" firstAttribute="centerX" secondItem="193-v3-H9f" secondAttribute="centerX" id="ibK-2e-aVc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f5I-ly-nzr"/>
+                    <connections>
+                        <outlet property="textField" destination="DAj-Dw-8UA" id="vhE-Bf-ufw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPJ-zT-LPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
